@@ -13,5 +13,9 @@
    <bean id = "mycoach1" class = "FootballCoach">
    <constructor-arg ref="myfortune"/>
    </bean>
-
+   <bean id="ccoach" class="CricketCoach">
+   <property name="FortuneService" ref="myfortune"/>
+   <property name="emailAddress" value="e2b@gm.com"/>
+   <property name="teamName" value="Barcelona"/>
+   </bean>
 </beans>

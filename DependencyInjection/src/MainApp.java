@@ -8,9 +8,12 @@ public class MainApp {
 				ClassPathXmlApplicationContext("applicationContext.xml");
 		
 		//TheCoach coach=context.getBean("mycoach1",TheCoach.class);
-		TheCoach coach=context.getBean("mycoach",TheCoach.class);
+		//TheCoach coach=context.getBean("mycoach",TheCoach.class);
+		CricketCoach coach=context.getBean("ccoach",CricketCoach.class);//SetterInjection
 		System.out.println(coach.Excercise());
 		System.out.println(coach.getFortune());
+		System.out.println(coach.getTeamName());
+		System.out.println(coach.getEmailAddress());
 		context.close();
 	}
 

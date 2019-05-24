@@ -1,0 +1,11 @@
+{
+    "fruit": "Apple",
+    "size": "Large",
+    "color": "Red",
+    "windowc": {
+        "title": "Sample Konfabulator Widget",
+        "name": "main_window",
+        "width": "ag",
+        "height": "an"
+    }
+}

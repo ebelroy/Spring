@@ -48,16 +48,31 @@ public class StudenRestController {
 		
 	}
 	
-	@ExceptionHandler
+	//comment the exception handler in StudentRestExceptionHandler.java then it will be run from this file
+	
+	
+	//@ExceptionHandler//uSE rest api client to get better result
 	public ResponseEntity<StudentErrorResponse> handleException(StudentNotFoundException exc){
 		
 		StudentErrorResponse err=new StudentErrorResponse();
 		err.setStatus(HttpStatus.NOT_FOUND.toString());
 		err.setMessage(exc.getMessage());
 		err.setTimestamp("dsgdsd");
-				
+				System.out.println("the out");
 		
 		return new ResponseEntity<>(err,HttpStatus.NOT_FOUND);
+		
+	}
+	
+	//@ExceptionHandler//this is for generic(default) case
+	public ResponseEntity<StudentErrorResponse> handleGenericException(Exception exc){
+		
+		StudentErrorResponse err=new StudentErrorResponse();
+		err.setStatus(HttpStatus.BAD_REQUEST.toString());
+		err.setMessage(exc.getMessage());
+		err.setTimestamp("dsgdsd");
+		
+		return new ResponseEntity<>(err,HttpStatus.BAD_REQUEST);
 		
 	}
 

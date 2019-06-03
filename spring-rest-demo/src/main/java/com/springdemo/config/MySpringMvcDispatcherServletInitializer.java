@@ -3,7 +3,8 @@ package com.springdemo.config;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 public class MySpringMvcDispatcherServletInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
-
+	
+//AbstractAnnotationConfigDispatcherServletInitializer this is insetad of servlet, supported by servlet container 3 and above,
 	@Override
 	protected Class<?>[] getRootConfigClasses() {
 		// TODO Auto-generated method stub

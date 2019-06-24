@@ -1,0 +1,45 @@
+<html xmlns th="http://www.thymeleaf.org">
+<head>
+
+Thymeleaf modellll
+
+ <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+<div class="container">
+
+<h3>Employee Details</h3>
+<table class="table table-bordered table-striped">
+<thead class="thead-dark">
+<tr>
+
+	<th>firstname</th>
+	<th>lastname</th>
+	<th>email</th>
+	<th>id</th> 
+	</tr>
+</thead>
+<tbody>
+<tr th:each="teEmp : ${empl}">
+	<td th:text="${teEmp.firstname}"/>
+	<td th:text="${teEmp.lastname}"/>
+	<td th:text="${teEmp.email}"/>
+	<td th:text="${teEmp.id}"/>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+
+</body>
+
+
+</html>

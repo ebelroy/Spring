@@ -1,0 +1,36 @@
+<html xmlns th="http://www.thymeleaf.org">
+<head>
+
+Thymeleaf modellll
+
+<title>
+
+</title>
+
+</head>
+
+<body>
+<h3>haiiiiiiiii</h3>
+<table border="1">
+<thead>
+	<tr>firstname</tr>
+	<tr>lastname</tr>
+	<tr>email</tr>
+	<tr>id</tr>
+</thead>
+<tbody>
+<tr th:each="teEmp : ${empl}">
+	<td th:text="${teEmp.firstname}"/>
+	<td th:text="${teEmp.lastname}"/>
+	<td th:text="${teEmp.email}"/>
+	<td th:text="${teEmp.id}"/>
+</tr>
+</tbody>
+</table>
+
+
+
+</body>
+
+
+</html>

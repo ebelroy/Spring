@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ebel>
+    <age>30</age>
+    <friends>edd</friends>
+    <slno>11</slno>
+</ebel>
